@@ -22,49 +22,84 @@
                 <h1>Bienvenido, <span id="nombreUsuario">Nombre del Usuario</span></h1>
             </div>
         </div>
-        <div class="row w-100 mt-5">
+        <div class="row w-100 bottom-section-color">
             <!-- Sección inferior -->
-            <div class="col-2">
+            <div class="col-2 p-0 m-0">
                 <!-- Menú -->
                 <nav>
                     <ul class="list-unstyled mb-3">
-                        <li class="mb-2">
+                        <li class="mb-2 menu-section" data-toggle="collapse" data-target="#tramites"
+                            style="cursor: pointer;">
                             <i class="fas fa-chevron-down"></i> Tramites Depósito a Plazo Fijo
                         </li>
-                        <li class="ml-3 mb-1">
-                            <button type="button" class="btn btn-link p-0" style="text-align: left;">Apertura de Cuenta
-                                DPF</button>
-                        </li>
-                        <li class="ml-3">
-                            <button type="button" class="btn btn-link p-0" style="text-align: left;">Cancelación de
-                                Cuenta DPF</button>
-                        </li>
+                        <div id="tramites" class="collapse ml-3">
+                            <li class="mb-1">
+                                <button type="button" class="btn btn-link p-0" style="text-align: left;">Apertura de
+                                    Cuenta DPF</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link p-0" style="text-align: left;">Cancelación de
+                                    Cuenta DPF</button>
+                            </li>
+                        </div>
                     </ul>
-                    <ul class="list-unstyled mb-3">
-                        <li class="mb-2">
+                    <ul class="list-unstyled">
+                        <li class="mb-2 menu-section" data-toggle="collapse" data-target="#devoluciones"
+                            style="cursor: pointer;">
                             <i class="fas fa-chevron-down"></i> Devoluciones
                         </li>
-                        <li class="ml-3">
-                            <button type="button" class="btn btn-link p-0" style="text-align: left;">Devolución por
-                                descuento</button>
-                        </li>
+                        <div id="devoluciones" class="collapse ml-3">
+                            <li>
+                                <button type="button" class="btn btn-link p-0" style="text-align: left">Devolución por
+                                    descuento</button>
+                            </li>
+                        </div>
                     </ul>
-                    <ul class="list-unstyled mt-2 ml-4">
-                        <button type="submit" class="btn btn-secondary">Salir</button>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 menu-section" data-toggle="collapse" data-target="#prestamos"
+                            style="cursor: pointer;">
+                            <i class="fas fa-chevron-down"></i>Prestamos
+                        </li>
+                        <div id="prestamos" class="collapse ml-3">
+                            <li class="mb-1">
+                                <button type="button" class="btn btn-link p-0" style="text-align: left">Autentificación
+                                    Biometrica</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link p-0" style="text-align: left">Firma
+                                    Digital</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link p-0" style="text-align: left">Solicitud de
+                                    Descuento</button>
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="menu-section down-left-section-border">
+                            <button type="submit" class="btn ml-5 btn-salir">Salir</button>
+                        </li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-10">
-                <!-- Formulario -->
-                <form>
-                    <div class="form-group">
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="correo"
-                            placeholder="Ingrese su correo electrónico">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Código</button>
-                </form>
+            <div class="col-10 mt-5 d-flex flex-column align-items-center">
+                <!-- Icono en la parte superior izquierda -->
+                <div class="icon-container">
+                    <i class="fas fa-file-invoice-dollar" style="color: #fff;"></i>
+
+                </div>
+                <div class="form-container">
+                    <!-- Formulario en el centro -->
+                    <form class="custom-form">
+                        <h2>Generación de Código</h2>
+                        <label for="correo">Ingrese su correo</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Correo Electronico">
+                        <button type="submit" class="btn">Enviar Código</button>
+                    </form>
+                </div>
             </div>
+
+
         </div>
     </div>
 
