@@ -15,11 +15,11 @@
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
         <div class="row w-100 upper-section-border">
             <!-- Sección superior -->
-            <div class="col-2 text-left right-section-border">
-                <img src="URL_DEL_LOGO" alt="Logo de la Empresa" class="img-fluid" style="max-width: 200px;">
+            <div class="col-2 text-left right-section-border mt-2">
+                <img src="assets/logonavbar.png" alt="Logo de la Empresa" class="img-fluid">
             </div>
             <div class="col-10 text-left ">
-                <h1>Bienvenido, <span id="nombreUsuario">Nombre del Usuario</span></h1>
+                <h1>Bienvenido <span id="nombreUsuario">a Intranet Coosunat</span></h1>
             </div>
         </div>
         <div class="row w-100 bottom-section-color">
@@ -82,20 +82,19 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-10 mt-5 d-flex flex-column align-items-center">
+            <div id="carouselContainer" class="col-10 mt-5 d-flex flex-column align-items-center">
                 <!-- Icono en la parte superior izquierda -->
                 <div class="icon-container">
                     <i class="fas fa-file-invoice-dollar" style="color: #fff;"></i>
-
                 </div>
-                <div class="form-container">
-                    <!-- Formulario en el centro -->
-                    <form class="custom-form">
-                        <h2>Generación de Código</h2>
-                        <label for="correo">Ingrese su correo</label>
-                        <input type="email" class="form-control" id="correo" placeholder="Correo Electronico">
-                        <button type="submit" class="btn">Enviar Código</button>
-                    </form>
+
+                <!-- Carrusel de imágenes -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/logoinferior.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -106,6 +105,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

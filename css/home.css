@@ -1,11 +1,10 @@
-
 .container-fluid {
     padding-right: 150px;
     padding-left: 150px;
     background-color: #f5f5f5;
 }
 
-.col-10 h1{
+.col-10 h1 {
     color: #0f6189;
 }
 
@@ -14,7 +13,8 @@
     border-radius: 30px 30px 0 0;
     background-color: #fff;
 }
-.bottom-section-color{
+
+.bottom-section-color {
     background-color: #fff;
 }
 
@@ -57,9 +57,11 @@
     left: 40px;
 }
 
-.icon-container i{
+.icon-container i {
     font-size: 42px;
 }
+
+/* ------- ESTILOS PARA FORMULARIO -------------
 .form-container {
     border: 1px solid #0f6189;
     border-radius: 30px;
@@ -90,4 +92,76 @@
     color: #fff;
     margin-top: 10px;
     margin-left: 30%;
+}*/
+
+.carousel-inner {
+    max-width: 30rem;
+    /* Ajusta según tu preferencia */
+    /*max-height: 400px;  Ajusta según tu preferencia */
+    margin: auto;
+    /* Centra el carrusel */
+    overflow: hidden;
+    /* Oculta cualquier contenido que sobresalga */
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Hace que las imágenes se ajusten al ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de las imágenes */
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*Haciendo visible menu hamburguesa */
+    /*nav {
+        display: none;
+    }*/
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+
+    /*Ajustando Carrusel */
+    .carousel-inner {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    /*Ajustando tamaño de iconos y texto */
+    .icon-container i {
+        font-size: 24px;
+    }
+
+    .menu-section {
+        font-size: 14px;
+    }
+
+    /*Ajustando layout inferior*/
+    .bottom-section-color {
+        flex-direction: column;
+    }
+
+    .col-2,
+    .col-10 {
+        width: 100%;
+    }
+
+    /*Ajustando padding*/
+
+    .container-fluid {
+        padding: 10px;
+    }
+
 }
